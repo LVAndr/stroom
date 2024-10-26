@@ -1,3 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before, *::after {
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body{
+  padding: 0;
+  margin: 0;
+  color: $dark-jungle-green-opacity;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: 1;
+  background-color: $white-smoke;
+}
+#app{
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.container{
+  padding: 0 $container-offset;
+  max-width: calc($container-width + ($container-offset * 2));
+  margin: 0 auto;
+  overflow: hidden;
+}
+main{
+  flex-grow: 1;
+}
 a{
   text-decoration: none;
+}
+.section{
+  padding-top: $section-offset;
+  padding-bottom: $section-offset;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+.heading-1{
+  font-size: 80px;
+  color: $dark-jungle-green;
+}
+.heading-1-light{
+  color: $white-smoke;
+}
+.heading-1{
+  font-size: 60px;
+  color: $dark-jungle-green;
+}
+.heading-1-light{
+  color: $white-smoke;
 }

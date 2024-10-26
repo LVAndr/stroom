@@ -1,11 +1,17 @@
 <script setup>
 
+import HeroSection from "@/components/layout/HeroSection.vue";
 </script>
 
 <template>
-  <h1>Stroom Home page</h1>
+  <hero-section/>
 </template>
 
 <style scoped lang="scss">
-
+h1{
+  font-size: 80px;
+}
+p{
+  font-size: 36px;
+}
 </style>

@@ -1,5 +1,6 @@
 <script setup>
 import LayoutHeader from '@/components/layout/Header.vue'
+import LayoutFooter from '@/components/layout/Footer.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import LayoutHeader from '@/components/layout/Header.vue'
     <main class="main">
       <router-view/>
     </main>
+    <layout-footer/>
   </div>
 </template>
 
