@@ -14,4 +14,5 @@ import LayoutFooter from '@/components/layout/Footer.vue'
 </template>
 
 <style scoped lang="scss">
+@import "@/styles/main.scss";
 </style>

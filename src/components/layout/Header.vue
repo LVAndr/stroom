@@ -1,9 +1,14 @@
 <script setup>
-
+import {useRoute} from "vue-router";
+import {computed} from "vue";
+const route = useRoute();
+const ifHomePageH = computed(() => {
+  return route.path === '/' || route.path === '/stroom/' ? 'header__homepage' : '';
+});
 </script>
 
 <template>
-<header class="header">
+<header :class="['header', ifHomePageH]">
   <div class="header__container container">
     <router-link class="logo" to="/">
       <img src="@/assets/logo.svg" alt="логотип Струм">
@@ -26,9 +31,21 @@
 <style scoped lang="scss">
 @import "@/styles/main.scss";
 .header{
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
   background-color: $dark-jungle-green;
   padding-top: $header-offset;
   padding-bottom: $header-offset;
+  z-index: 100;
+  &__homepage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+  }
   &__container{
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,30 @@
+@use "variables";
+
+.heading-1{
+  font-size: 80px;
+  color: variables.$dark-jungle-green;
+  span{
+    color: variables.$alien-green;
+  }
+}
+.heading-1-light{
+  font-size: 80px;
+  color: variables.$white-smoke;
+  span{
+    color: variables.$yellowy-green;
+  }
+}
+.heading-2{
+  font-size: 60px;
+  color: variables.$dark-jungle-green;
+  span{
+    color: variables.$alien-green;
+  }
+}
+.heading-2-light{
+  font-size: 60px;
+  color: variables.$white-smoke;
+  span{
+    color: variables.$yellowy-green;
+  }
+}
