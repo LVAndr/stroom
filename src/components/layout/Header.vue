@@ -10,7 +10,7 @@ const ifHomePageH = computed(() => {
 <template>
 <header :class="['header', ifHomePageH]">
   <div class="header__container container">
-    <router-link class="logo" to="/">
+    <router-link class="logo" to="/stroom/">
       <img src="@/assets/logo.svg" alt="логотип Струм">
     </router-link>
     <nav class="header__navigation">

@@ -41,15 +41,16 @@ const props = defineProps({
   cursor: pointer;
   transition: color .3s ease, color .3s ease;
   &:hover{
-    color: $dark-jungle-green-opacity;
+    color: $alien-green;
   }
   &__yellowy-green{
     background-color: $yellowy-green;
     transition: background-color .3s ease, color .3s ease;
     &:hover{
-      background-color: #bcfa39;
+      background-color: $white-smoke;
     }
     &:active{
+      color: $dark-jungle-green-opacity;
       background-color: #afec2f;
     }
   }

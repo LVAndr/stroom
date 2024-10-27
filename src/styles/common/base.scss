@@ -50,3 +50,21 @@ a{
   color: inherit;
   text-decoration: none;
 }
+@media (max-width: 991.99px) {
+  .container{
+    padding: 0 $container-offset-992px;
+    max-width: calc($container-width + ($container-offset-992px * 2));
+  }
+}
+@media (max-width: 767.99px) {
+  .container{
+    padding: 0 $container-offset-768px;
+    max-width: calc($container-width + ($container-offset-768px * 2));
+  }
+}
+@media (max-width: 479.99px) {
+  .container{
+    padding: 0 $container-offset-480px;
+    max-width: calc($container-width + ($container-offset-480px * 2));
+  }
+}

@@ -28,24 +28,38 @@ import SetButton from "@/components/setButton.vue";
 .hero{
   position: relative;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.15);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  &__container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: $section-offset;
+    box-sizing: border-box;
+    @media (max-width: 767.98px) {
+      padding-top: 40px;
+    }
+  }
   .background-video {
     max-width: 1920px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
   }
   &__content{
-    position: absolute;
-    bottom: 60px;
     color: $white-smoke;
     max-width: 880px;
     z-index: 1;
