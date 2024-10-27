@@ -29,7 +29,7 @@ import SetButton from "@/components/setButton.vue";
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(6px);
@@ -45,8 +45,15 @@ import SetButton from "@/components/setButton.vue";
     padding-top: 60px;
     padding-bottom: $section-offset;
     box-sizing: border-box;
+    @media (max-width: 991.98px) {
+      padding-bottom: $section-offset-992px;
+    }
     @media (max-width: 767.98px) {
       padding-top: 40px;
+      padding-bottom: $section-offset-768px;
+    }
+    @media (max-width: 479.98px) {
+      padding-bottom: $section-offset-480px;
     }
   }
   .background-video {

@@ -1,7 +1,7 @@
 @use "variables";
 
 .heading-1{
-  font-size: 80px;
+  font-size: clamp(2.5rem, 4.348vw + 1.63rem, 5rem);
   color: variables.$dark-jungle-green;
   span{
     color: variables.$alien-green;
@@ -15,14 +15,14 @@
   }
 }
 .heading-2{
-  font-size: 60px;
+  font-size: clamp(1.875rem, 3.261vw + 1.223rem, 3.75rem);
   color: variables.$dark-jungle-green;
   span{
     color: variables.$alien-green;
   }
 }
 .heading-2-light{
-  font-size: 60px;
+  font-size: clamp(1.875rem, 3.261vw + 1.223rem, 3.75rem);
   color: variables.$white-smoke;
   span{
     color: variables.$yellowy-green;

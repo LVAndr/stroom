@@ -32,11 +32,13 @@ const props = defineProps({
 @import "@/styles/main.scss";
 
 .btn{
+  font-size: inherit;
+  font-weight: 500;
   line-height: 1;
   user-select: none;
   display: inline-block;
   color: $dark-jungle-green;
-  padding: 20px 40px;
+  padding: 16px 28px;
   border-radius: 30px;
   cursor: pointer;
   transition: color .3s ease, color .3s ease;

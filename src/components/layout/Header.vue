@@ -50,13 +50,14 @@ const ifHomePageH = computed(() => {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     height: $header-height;
   }
   &__navigation{
     display: flex;
     align-items: center;
     &-link{
-      font-size: 18px;
+      font-size: inherit;
       color: $white-smoke;
       transition: opacity .3s ease;
       &:not(:last-child){
@@ -69,8 +70,88 @@ const ifHomePageH = computed(() => {
         display: grid;
         align-items: center;
         justify-content: center;
-        width: 50px;
-        height: 50px;
+        .svg{
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992.98px) {
+  .header{
+    padding-top: $header-offset-992px;
+    padding-bottom: $header-offset-992px;
+    .logo>img{
+      height: 45px;
+      width: auto;
+    }
+    &__navigation{
+      &-link{
+        &:not(:last-child){
+          margin-right: 80px;
+        }
+        .user-icon>svg{
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .header{
+    padding-top: $header-offset-768px;
+    padding-bottom: $header-offset-768px;
+    .logo>img{
+      height: 35px;
+    }
+    &__navigation{
+      &-link{
+        &:not(:last-child){
+          margin-right: 50px;
+        }
+        .user-icon>svg{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 479.98px) {
+  .header{
+    padding-top: $header-offset-480px;
+    padding-bottom: $header-offset-480px;
+    .logo>img{
+      height: 30px;
+      width: auto;
+    }
+    &__navigation{
+      &-link{
+        &:not(:last-child){
+          margin-right: 20px;
+        }
+        .user-icon>svg{
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 374.98px) {
+  .header{
+    &__navigation{
+      &-link{
+        &:not(:last-child){
+          margin-right: 15px;
+        }
+        .user-icon>svg{
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }

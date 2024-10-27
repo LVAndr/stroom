@@ -33,9 +33,43 @@
     &-logo{
       display: flex;
       flex-direction: column;
+      align-items: center;
       .copyright{
         text-align: center;
-        font-size: 16px;
+        font-size: clamp(0.75rem, 0.435vw + 0.663rem, 1rem);
+      }
+    }
+  }
+}
+@media (max-width: 992.98px) {
+  .footer{
+    padding-top: 50px;
+    &__content{
+      &-logo>a>img{
+        height: 45px;
+        width: auto;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .footer{
+    padding-top: 35px;
+    &__content{
+      &-logo>a>img{
+        height: 35px;
+        width: auto;
+      }
+    }
+  }
+}
+@media (max-width: 479.98px) {
+  .footer{
+    padding-top: 25px;
+    &__content{
+      &-logo>a>img{
+        height: 30px;
+        width: auto;
       }
     }
   }

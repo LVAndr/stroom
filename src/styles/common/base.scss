@@ -55,16 +55,28 @@ a{
     padding: 0 $container-offset-992px;
     max-width: calc($container-width + ($container-offset-992px * 2));
   }
+  .section{
+    padding-top: $section-offset-992px;
+    padding-bottom: $section-offset-992px;
+  }
 }
 @media (max-width: 767.99px) {
   .container{
     padding: 0 $container-offset-768px;
     max-width: calc($container-width + ($container-offset-768px * 2));
   }
+  .section{
+    padding-top: $section-offset-768px;
+    padding-bottom: $section-offset-768px;
+  }
 }
 @media (max-width: 479.99px) {
   .container{
     padding: 0 $container-offset-480px;
     max-width: calc($container-width + ($container-offset-480px * 2));
+  }
+  .section{
+    padding-top: $section-offset-480px;
+    padding-bottom: $section-offset-480px;
   }
 }

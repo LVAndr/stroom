@@ -10,12 +10,18 @@ $porcelain: #EDF1F3;
 
 $header-height: 64px;
 $header-offset: 60px;
+$header-offset-992px: 45px;
+$header-offset-768px: 30px;
+$header-offset-480px: 5px;
 $container-width: 1240px;
 $container-offset: 100px;
 $container-offset-992px: 75px;
 $container-offset-768px: 45px;
 $container-offset-480px: 20px;
 $section-offset: 60px;
+$section-offset-992px: 50px;
+$section-offset-768px: 35px;
+$section-offset-480px: 25px;
 
 $font-size-big: clamp(1.5rem, 1.304vw + 1.239rem, 2.25rem);;
 $font-size: clamp(1rem, 0.217vw + 0.957rem, 1.125rem);
