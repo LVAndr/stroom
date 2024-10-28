@@ -22,7 +22,7 @@ const props = defineProps({
         <path d="M0.5 35.5H34.6026V0.5" stroke="#B9F833" stroke-width="7.17949"/>
       </svg>
     </div>
-    <h3 class="item__title">{{title}}</h3>
+    <h3 class="item__title heading-3-light">{{title}}</h3>
     <p class="item__text">{{text}}</p>
   </li>
 </template>

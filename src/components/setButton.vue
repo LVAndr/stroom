@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   url: {
-    type: String,
+    type: [String, Object],
     default: '',
   },
   label: {

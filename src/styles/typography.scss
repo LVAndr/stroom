@@ -28,3 +28,17 @@
     color: variables.$yellowy-green;
   }
 }
+.heading-3{
+  font-size: clamp(1.375rem, 1.957vw + 0.984rem, 2.5rem);
+  color: variables.$dark-jungle-green;
+  span{
+    color: variables.$alien-green;
+  }
+}
+.heading-3-light{
+  font-size: clamp(1.375rem, 1.957vw + 0.984rem, 2.5rem);
+  color: variables.$white-smoke;
+  span{
+    color: variables.$yellowy-green;
+  }
+}

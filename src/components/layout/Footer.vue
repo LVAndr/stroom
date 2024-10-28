@@ -6,7 +6,7 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__content-logo">
-        <router-link class="logo" to="/stroom/">
+        <router-link class="logo" :to="{name: 'home'}">
           <img src="@/assets/logo.svg" alt="логотип Струм">
         </router-link>
         <small class="copyright">
