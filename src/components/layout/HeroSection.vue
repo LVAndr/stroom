@@ -16,7 +16,7 @@ import SetButton from "@/components/setButton.vue";
           горизонти.</p>
         <set-button
             label="Почати досліджувати"
-            url="/professions"
+            url="/stroom/professions"
         />
       </div>
     </div>
@@ -51,9 +51,6 @@ import SetButton from "@/components/setButton.vue";
     @media (max-width: 767.98px) {
       padding-top: 40px;
       padding-bottom: $section-offset-768px;
-    }
-    @media (max-width: 479.98px) {
-      padding-bottom: $section-offset-480px;
     }
   }
   .background-video {

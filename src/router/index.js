@@ -13,12 +13,12 @@ const router = createRouter({
         },
         {
             name: "Professions",
-            path: '/professions',
+            path: '/stroom/professions',
             component: Professions
         },
         {
             name: "User",
-            path: '/user',
+            path: '/stroom/user',
             component: User
         },
     ]
