@@ -1,0 +1,1 @@
+import{_ as o,c as n,a as e,o as c}from"./index-BT8D6AKE.js";const r={},t={class:"section profession"};function a(i,s){return c(),n("section",t,s[0]||(s[0]=[e("div",{class:"profession__container container"},[e("h1",{class:"profession heading-1"},"Професія")],-1)]))}const f=o(r,[["render",a]]);export{f as default};
