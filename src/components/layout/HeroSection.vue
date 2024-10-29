@@ -15,8 +15,10 @@ import SetButton from "@/components/setButton.vue";
         <p class="hero__content-description">Дізнавайся, які професії пасують тобі найбільше. Досліджуй, вчись, відкривай нові
           горизонти.</p>
         <set-button
+            tag="a"
             label="Почати досліджувати"
-            url="/stroom/professions"
+            url="#home-exp-profs"
+            animation="white"
         />
       </div>
     </div>

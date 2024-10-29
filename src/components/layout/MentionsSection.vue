@@ -6,7 +6,7 @@ import Ticker from "@/components/Ticker.vue";
 <template>
 <section class="section mentions">
   <div class="container mentions__container">
-    <div class="mentions__content">
+    <div class="mentions__text-content">
       <h2 class="mentions__title heading-2">Про <span>Струм</span> говорять</h2>
       <p class="mentions__text">Про нас пишуть не тільки у пресі, а навіть на сайті Верховної Ради України!</p>
     </div>
@@ -17,7 +17,7 @@ import Ticker from "@/components/Ticker.vue";
 
 <style scoped lang="scss">
 .mentions{
-  &__content{
+  &__text-content{
     max-width: 1136px;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ import Ticker from "@/components/Ticker.vue";
 }
 @media (max-width: 879.98px) {
   .mentions{
-    &__content{
+    &__text-content{
       display: block;
     }
     &__text{

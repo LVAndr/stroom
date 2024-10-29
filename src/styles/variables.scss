@@ -1,8 +1,11 @@
 $yellowy-green: #B9F833;
+$yellowy-green-light: #c0f849;
+$yellowy-green-dark: #b0f61a;
 $alien-green: #79C912;
 $white-smoke: #f5f5f5;
 $dark-jungle-green: #222222;
 $dark-jungle-green-opacity: rgba(34, 34, 34, 0.8);
+$dark-jungle-green-dark: #1b1b1b;
 $ghost: #CBCBCB;
 $boulder: #767676;
 $oslo-grey: #8B8B8B;
@@ -26,3 +29,6 @@ $section-offset-480px: 25px;
 $font-size-big: clamp(1.5rem, 1.304vw + 1.239rem, 2.25rem);;
 $font-size: clamp(1rem, 0.217vw + 0.957rem, 1.125rem);
 $font-size-small: 12px;
+
+$border-radius-btn: 50rem;
+$border-radius-large: 40px;
