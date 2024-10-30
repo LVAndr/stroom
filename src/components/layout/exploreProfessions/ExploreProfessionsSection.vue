@@ -12,12 +12,12 @@ import ExploreProfessionsCard from "@/components/layout/exploreProfessions/Explo
       <p class="explore-professions__text">Дізнайся про ту роботу, яка тобі найбільше подобається та відповідає твоїм інтересам</p>
     </div>
     <ul class="explore-professions__list">
-      <explore-professions-card/>
-      <explore-professions-card/>
-      <explore-professions-card/>
-      <explore-professions-card/>
-      <explore-professions-card/>
-      <explore-professions-card/>
+      <explore-professions-card class="explore-professions__item"/>
+      <explore-professions-card class="explore-professions__item"/>
+      <explore-professions-card class="explore-professions__item"/>
+      <explore-professions-card class="explore-professions__item"/>
+      <explore-professions-card class="explore-professions__item"/>
+      <explore-professions-card class="explore-professions__item"/>
     </ul>
     <div class="explore-professions__btn">
       <set-button
@@ -43,10 +43,10 @@ import ExploreProfessionsCard from "@/components/layout/exploreProfessions/Explo
     max-width: 400px;
   }
   &__list{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
+    justify-content: center;
     gap: 20px;
   }
   &__btn{
@@ -76,6 +76,20 @@ import ExploreProfessionsCard from "@/components/layout/exploreProfessions/Explo
       margin-top: 10px;
       max-width: 400px;
       width: auto;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .explore-professions{
+    &__list{
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    }
+  }
+}
+@media (max-width: 629.98px) {
+  .explore-professions{
+    &__list{
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));;
     }
   }
 }

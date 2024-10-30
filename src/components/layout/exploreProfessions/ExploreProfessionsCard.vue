@@ -1,15 +1,29 @@
 <script setup>
 import designer from '@/assets/professions-img/designer.jpg'
+import {ref} from "vue";
+
+const image = ref(designer);
+
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Кравець'
+  },
+  imgName: {
+    type: String,
+  }
+})
+
 </script>
 
 <template>
   <li class="explore-item">
     <router-link class="explore-item__link" :to="{name: 'profession',params:{id: 1}}">
       <div class="explore-item__img">
-        <img :src="designer" width="450" height="450" alt="зображення професії">
+        <img :src="image" width="auto" height="450" alt="зображення професії">
       </div>
       <div class="explore-item__description">
-        <h3 class="explore-item__title heading-3-light">Кравець</h3>
+        <h3 class="explore-item__title heading-3-light">{{title}}</h3>
       </div>
     </router-link>
   </li>
@@ -24,7 +38,7 @@ import designer from '@/assets/professions-img/designer.jpg'
   position: relative;
   overflow: hidden;
   border-radius: $border-radius-large;
-  background-color: #8B8B8B;
+  background-color: $dark-jungle-green;
   transition: .4s ease;
   &__link{
     width: 100%;
@@ -32,7 +46,7 @@ import designer from '@/assets/professions-img/designer.jpg'
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: transparent;
     padding: 20px 15px;
   }
   &__img{
@@ -55,7 +69,8 @@ import designer from '@/assets/professions-img/designer.jpg'
       background-color: $dark-jungle-green-opacity50;
     }
     & img{
-      max-width: 450px;
+      width: 100%;
+      height: 100%;
       transition: transform .5s ease;
     }
   }
@@ -75,7 +90,42 @@ import designer from '@/assets/professions-img/designer.jpg'
     z-index: 50;
   }
 }
+@media (max-width: 991.98px) {
+  .explore-item{
+    &__link{
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .explore-item{
+    &__link{
+      height: 300px;
+    }
+  }
+}
+@media (max-width: 629.98px) {
+  .explore-item{
+    &__link{
+      height: 250px;
+    }
+  }
+}
+@media (max-width: 479.98px) {
+  .explore-item{
+    &__link{
+      height: 250px;
+    }
+  }
+}
 @media (max-width: 424.98px) {
+  .explore-item{
+    &__link{
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 374.98px) {
   .explore-item{
     &__link{
       height: 300px;
