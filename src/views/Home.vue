@@ -3,7 +3,7 @@ import HeroSection from "@/components/layout/HeroSection.vue";
 import AboutProjectSection from "@/components/layout/AboutProjectSection.vue";
 import FeaturesSection from "@/components/layout/FeaturesSection.vue";
 import MentionsSection from "@/components/layout/MentionsSection.vue";
-import ExploreProfessionsSection from "@/components/layout/ExploreProfessionsSection.vue";
+import ExploreProfessionsSection from "@/components/layout/exploreProfessions/ExploreProfessionsSection.vue";
 
 </script>
 

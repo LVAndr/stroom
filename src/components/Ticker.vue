@@ -39,8 +39,6 @@ import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
         </div>
       </div>
 
-
-
       <div class="ticker__item">
         <div class="ticker__img">
           <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
@@ -70,189 +68,6 @@ import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
           <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
         </div>
       </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="ainImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="spekaImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="vectorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="hiTechExpImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
-      <div class="ticker__item">
-        <div class="ticker__img">
-          <img :src="seniorImg" height="40" width="auto" alt="Іконка ресурсів що згадує Струм">
-        </div>
-      </div>
-
 
     </div>
   </div>
@@ -272,29 +87,46 @@ import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
   position: relative;
   overflow: hidden;
   cursor: grab;
+  display: flex;
   &__wrapper{
-    width: 100%;
     display: flex;
-    //animation: ticker 8s alternate infinite;
+    //gap: 96px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: ticker 12s linear infinite;
   }
   &__item{
     display: inline-block;
-    flex-shrink: 0;
     padding: 0 97px;
   }
   &__img{
     display: inline-block;
   }
 }
-//@keyframes ticker {
-//  0%{
-//    transform: translateZ(0);
-//  }
-//  100%{
-//    transform: translate3d(-100%, 0, 0);
-//  }
-//}
-
+@keyframes ticker {
+  0%{
+    transform: translateZ(0);
+  }
+  100%{
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (max-width: 991.98px) {
+  .ticker{
+    &__item{
+      padding: 0 55px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .ticker{
+    &__item{
+      padding: 0 45px;
+    }
+  }
+}
 @media (max-width: 479.98px) {
   .ticker{
     &__item{
