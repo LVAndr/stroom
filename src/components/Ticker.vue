@@ -74,14 +74,6 @@ import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
 </template>
 
 <style scoped lang="scss">
-//.ticker{
-//  width: 100%;
-//  white-space: nowrap;
-//  //margin-top: 30px;
-//  position: relative;
-//  overflow: hidden;
-//}
-
 .ticker{
   margin-top: 30px;
   position: relative;
@@ -90,7 +82,6 @@ import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
   display: flex;
   &__wrapper{
     display: flex;
-    //gap: 96px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
