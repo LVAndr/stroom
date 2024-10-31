@@ -86,7 +86,7 @@ import ExploreProfessionsCard from "@/components/layout/exploreProfessions/Explo
     }
   }
 }
-@media (max-width: 629.98px) {
+@media (max-width: 639.98px) {
   .explore-professions{
     &__list{
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));;

@@ -7,7 +7,7 @@ const image = ref(designer);
 const props = defineProps({
   title: {
     type: String,
-    default: 'Кравець'
+    default: 'Зварювальник'
   },
   imgName: {
     type: String,
@@ -20,7 +20,7 @@ const props = defineProps({
   <li class="explore-item">
     <router-link class="explore-item__link" :to="{name: 'profession',params:{id: 1}}">
       <div class="explore-item__img">
-        <img :src="image" width="auto" height="450" alt="зображення професії">
+        <img :src="image" width="auto" height="450" alt="зображення професії" loading="lazy">
       </div>
       <div class="explore-item__description">
         <h3 class="explore-item__title heading-3-light">{{title}}</h3>
@@ -42,7 +42,7 @@ const props = defineProps({
   transition: .4s ease;
   &__link{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -93,42 +93,42 @@ const props = defineProps({
 @media (max-width: 991.98px) {
   .explore-item{
     &__link{
-      height: 350px;
+      min-height: 350px;
     }
   }
 }
 @media (max-width: 767.98px) {
   .explore-item{
     &__link{
-      height: 300px;
+      min-height: 300px;
     }
   }
 }
-@media (max-width: 629.98px) {
+@media (max-width: 639.98px) {
   .explore-item{
     &__link{
-      height: 250px;
+      min-height: 250px;
     }
   }
 }
 @media (max-width: 479.98px) {
   .explore-item{
     &__link{
-      height: 250px;
+      min-height: 250px;
     }
   }
 }
 @media (max-width: 424.98px) {
   .explore-item{
     &__link{
-      height: 350px;
+      min-height: 350px;
     }
   }
 }
 @media (max-width: 374.98px) {
   .explore-item{
     &__link{
-      height: 300px;
+      min-height: 300px;
     }
   }
 }

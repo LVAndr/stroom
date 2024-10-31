@@ -31,7 +31,7 @@ import SetButton from "@/components/setButton.vue";
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(6px);

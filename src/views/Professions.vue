@@ -1,14 +1,13 @@
 <script setup>
 
 import SetButton from "@/components/setButton.vue";
+import SearchPanelSection from "@/components/layout/SearchPanelSection.vue";
 </script>
 
 <template>
+  <search-panel-section/>
   <section class="section">
     <div class="container">
-      <h1 class="heading-1" style="margin-bottom: 20px">
-        Професії
-      </h1>
       <div  style="margin-bottom: 20px">
         <set-button color="dark" animation="light-dark" :url="{name: 'profession', params: {id: '1'}}" label="Сторінка професії"/>
       </div>

@@ -60,6 +60,7 @@ const clickOnButton = ()=>{
   font-size: inherit;
   font-weight: 500;
   line-height: 1;
+  white-space: nowrap;
   user-select: none;
   display: inline-block;
   color: $dark-jungle-green;
@@ -119,6 +120,7 @@ const clickOnButton = ()=>{
         background-color: $dark-jungle-green-opacity;
       }
       &:active{
+        color: $porcelain;
         background-color: $dark-jungle-green-dark;
       }
     }
