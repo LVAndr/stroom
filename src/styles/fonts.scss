@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Ermilov Pro';
+  src: url("../assets/fonts/ermilovpro-semibold-webfont.woff2") format("woff2"),
+  url("../assets/fonts/ermilovpro-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ermilov Pro';
+  src: url("../assets/fonts/ermilovpro-medium-webfont.woff2") format("woff2"),
+  url("../assets/fonts/ermilovpro-medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}

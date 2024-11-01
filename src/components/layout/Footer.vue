@@ -7,7 +7,7 @@
     <div class="footer__container container">
       <div class="footer__content-logo">
         <router-link class="logo" :to="{name: 'home'}">
-          <img src="@/assets/logo.svg" alt="логотип Струм">
+          <img src="../../assets/images/logo.svg" alt="логотип Струм">
         </router-link>
         <small class="copyright">
           &copy; Всі права захищено

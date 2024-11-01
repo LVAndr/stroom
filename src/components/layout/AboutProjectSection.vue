@@ -31,7 +31,7 @@
     &-highlight{
       margin-top: 20px;
       font-weight: 700;
-      color: $alien-green;
+      color: $apple-green;
     }
   }
 }

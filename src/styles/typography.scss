@@ -1,44 +1,51 @@
 @use "variables";
 
+.heading-1, .heading-1-light, .heading-2, .heading-2-light,
+.heading-3, .heading-3-light{
+  font-family: 'Ermilov Pro', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
 .heading-1{
   font-size: clamp(2.5rem, 4.348vw + 1.63rem, 5rem);
   color: variables.$dark-jungle-green;
   span{
-    color: variables.$alien-green;
+    color: $apple-green;
   }
 }
 .heading-1-light{
   font-size: clamp(2.5rem, 7.609vw + 0.978rem, 6.875rem);
   color: variables.$white-smoke;
   span{
-    color: variables.$yellowy-green;
+    color: variables.$apple-green;
   }
 }
 .heading-2{
   font-size: clamp(1.875rem, 3.261vw + 1.223rem, 3.75rem);
   color: variables.$dark-jungle-green;
   span{
-    color: variables.$alien-green;
+    color: $apple-green;
   }
 }
 .heading-2-light{
   font-size: clamp(1.875rem, 3.261vw + 1.223rem, 3.75rem);
   color: variables.$white-smoke;
   span{
-    color: variables.$yellowy-green;
+    color: variables.$apple-green;
   }
 }
 .heading-3{
   font-size: clamp(1.375rem, 1.957vw + 0.984rem, 2.5rem);
   color: variables.$dark-jungle-green;
   span{
-    color: variables.$alien-green;
+    color: $apple-green;
   }
 }
 .heading-3-light{
   font-size: clamp(1.375rem, 1.957vw + 0.984rem, 2.5rem);
   color: variables.$white-smoke;
   span{
-    color: variables.$yellowy-green;
+    color: variables.$apple-green;
   }
 }

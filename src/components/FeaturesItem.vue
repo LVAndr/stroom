@@ -18,8 +18,8 @@ const props = defineProps({
   >
     <div class="item__icon">
       <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4.08887 3.64087L35.4991 35.0511" stroke="#B9F833" stroke-width="7.17949"/>
-        <path d="M0.5 35.5H34.6026V0.5" stroke="#B9F833" stroke-width="7.17949"/>
+        <path d="M4.08887 3.64087L35.4991 35.0511" stroke="#77D202" stroke-width="7.17949"/>
+        <path d="M0.5 35.5H34.6026V0.5" stroke="#77D202" stroke-width="7.17949"/>
       </svg>
     </div>
     <h3 class="item__title heading-3-light">{{title}}</h3>

@@ -1,5 +1,5 @@
 <script setup>
-import designer from '@/assets/professions-img/designer.jpg'
+import designer from '@/assets/images/professions-img/designer.jpg'
 import {ref} from "vue";
 
 const image = ref(designer);

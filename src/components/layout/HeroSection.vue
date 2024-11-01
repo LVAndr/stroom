@@ -6,8 +6,8 @@ import SetButton from "@/components/setButton.vue";
 <template>
   <section class="section hero">
     <video autoplay loop muted playsinline class="background-video">
-      <source src="@/assets/hero-background.mp4" type="video/mp4">
-      <source src="@/assets/hero-background.webm" type="video/webm">
+      <source src="../../assets/images/hero-background.mp4" type="video/mp4">
+      <source src="../../assets/images/hero-background.webm" type="video/webm">
     </video>
     <div class="container hero__container">
       <div class="hero__content">
@@ -56,7 +56,7 @@ import SetButton from "@/components/setButton.vue";
     }
   }
   .background-video {
-    max-width: 1920px;
+    max-width: 1600px;
     position: absolute;
     top: 0;
     left: 0;

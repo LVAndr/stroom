@@ -11,15 +11,15 @@ const ifHomePageH = computed(() => {
 <header :class="['header', ifHomePageH]">
   <div class="header__container container">
     <router-link class="logo" :to="{name: 'home'}">
-      <img src="@/assets/logo.svg" alt="логотип Струм">
+      <img src="../../assets/images/logo.svg" alt="логотип Струм">
     </router-link>
     <nav class="header__navigation">
       <router-link class="header__navigation-link" :to="{name: 'professions'}">Професії</router-link>
       <router-link class="header__navigation-link" :to="{name: 'user'}">
         <div class="user-icon">
           <svg width="43" height="39" viewBox="0 0 43 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21.6464" cy="12.5778" r="9.90856" stroke="#B9F833" stroke-width="5.33894"/>
-            <path d="M2.66797 38.804C2.74508 34.2547 6.60046 25.156 21.4051 25.156C36.2098 25.156 40.0651 34.2547 40.1423 38.804" stroke="#B9F833" stroke-width="5.33844"/>
+            <circle cx="21.6464" cy="12.5778" r="9.90856" stroke="#77D202" stroke-width="5.33894"/>
+            <path d="M2.66797 38.804C2.74508 34.2547 6.60046 25.156 21.4051 25.156C36.2098 25.156 40.0651 34.2547 40.1423 38.804" stroke="#77D202" stroke-width="5.33844"/>
           </svg>
         </div>
       </router-link>

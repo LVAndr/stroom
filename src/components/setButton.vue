@@ -14,7 +14,7 @@ const props = defineProps({
   },
   color:{
     type: String,
-    default: 'yellowy-green',
+    default: 'apple-green',
   },
   disabled: {
     type: Boolean,
@@ -57,7 +57,8 @@ const clickOnButton = ()=>{
 
 .btn{
   min-width: 100px;
-  font-size: inherit;
+  font-size: clamp(1.125rem, 0.435vw + 1.038rem, 1.375rem);
+  font-family: 'Ermilov Pro', 'Arial', 'Helvetica', sans-serif;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
@@ -68,8 +69,8 @@ const clickOnButton = ()=>{
   border-radius: $border-radius-btn;
   cursor: pointer;
   transition: color .3s ease, color .3s ease;
-  &__yellowy-green{
-    background-color: $yellowy-green;
+  &__apple-green{
+    background-color: $apple-green;
   }
   &__dark{
     background-color: $dark-jungle-green;
@@ -80,10 +81,10 @@ const clickOnButton = ()=>{
     cursor: not-allowed;
     &:hover{
       color: rgba(34, 34, 34, 1);
-      background-color: $yellowy-green;
+      background-color: inherit;
     }
     &:active{
-      background-color: $yellowy-green;
+      background-color: inherit;
     }
   }
   &__full{
@@ -96,27 +97,27 @@ const clickOnButton = ()=>{
       transition: background-color .3s ease, color .3s ease;
       &:hover{
         color: $dark-jungle-green-opacity;
-        background-color: $yellowy-green-light;
+        background-color: $apple-green-light;
       }
       &:active{
-        background-color: $yellowy-green-dark;
+        background-color: $apple-green-dark;
       }
     }
     &__white{
       transition: background-color .3s ease, color .3s ease;
       &:hover{
         background-color: $white-smoke;
-        color: $alien-green;
+        color: $apple-green;
       }
       &:active{
         color: $dark-jungle-green-opacity;
-        background-color: $yellowy-green-dark;
+        background-color: $apple-green-dark;
       }
     }
     &__light-dark{
       transition: background-color .3s ease, color .3s ease;
       &:hover{
-        color: $alien-green;
+        color: $apple-green;
         background-color: $dark-jungle-green-opacity;
       }
       &:active{

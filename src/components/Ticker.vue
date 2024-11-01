@@ -1,9 +1,9 @@
 <script setup>
-import ainImg from '@/assets/home-ticker-img/ain.svg'
-import spekaImg from '@/assets/home-ticker-img/speka.svg'
-import vectorImg from '@/assets/home-ticker-img/vector.svg'
-import hiTechExpImg from '@/assets/home-ticker-img/hiTechExpert.svg'
-import seniorImg from '@/assets/home-ticker-img/senior-ua.svg'
+import ainImg from '@/assets/images/home-ticker-img/ain.svg'
+import spekaImg from '@/assets/images/home-ticker-img/speka.svg'
+import vectorImg from '@/assets/images/home-ticker-img/vector.svg'
+import hiTechExpImg from '@/assets/images/home-ticker-img/hiTechExpert.svg'
+import seniorImg from '@/assets/images/home-ticker-img/senior-ua.svg'
 </script>
 
 <template>

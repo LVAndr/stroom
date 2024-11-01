@@ -20,6 +20,6 @@ import ExploreProfessionsSection from "@/components/layout/exploreProfessions/Ex
 @import "@/styles/main.scss";
 .home__line{
   //background-color: $alien-green;
-  border: 3px solid $alien-green;
+  border: 3px solid $apple-green;
 }
 </style>
