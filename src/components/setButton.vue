@@ -16,6 +16,10 @@ const props = defineProps({
     type: String,
     default: 'apple-green',
   },
+  rounded:{
+    type: Boolean,
+    default: false,
+  },
   disabled: {
     type: Boolean,
     default: false,
@@ -45,7 +49,7 @@ const clickOnButton = ()=>{
       :to="tag === 'router-link' ? url : null"
       @click="clickOnButton"
       :is="tag"
-      :class="['btn', `btn__${color}`, {'btn__disabled': disabled},
+      :class="['btn', `btn__${color}`, {'btn__rounded': rounded}, {'btn__disabled': disabled},
       {'btn__full': full}, `btn-animation__${animation}`]"
       >
     {{label}}
@@ -57,6 +61,7 @@ const clickOnButton = ()=>{
 
 .btn{
   min-width: 100px;
+  text-align: center;
   font-size: clamp(1.125rem, 0.435vw + 1.038rem, 1.375rem);
   font-family: 'Ermilov Pro', 'Arial', 'Helvetica', sans-serif;
   font-weight: 500;
@@ -75,6 +80,13 @@ const clickOnButton = ()=>{
   &__dark{
     background-color: $dark-jungle-green;
     color: $white-smoke;
+  }
+  &__rounded{
+    background-color: transparent;
+    color: $apple-green;
+    border: 2px solid $apple-green;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   &__disabled{
     opacity: 0.6;

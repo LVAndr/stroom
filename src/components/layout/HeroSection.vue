@@ -31,11 +31,21 @@ import SetButton from "@/components/setButton.vue";
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  &:before{
+    max-width: 1600px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    //backdrop-filter: blur(6px);
+    //-webkit-backdrop-filter: blur(6px);
+  }
   &__container{
     position: absolute;
     bottom: 0;
@@ -68,7 +78,7 @@ import SetButton from "@/components/setButton.vue";
   &__content{
     color: $white-smoke;
     max-width: 880px;
-    z-index: 1;
+    z-index: 10;
     &-title{
       margin-bottom: 10px;
     }

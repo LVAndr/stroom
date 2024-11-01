@@ -1,14 +1,10 @@
 <script setup>
 
+import ProfessionOverviewSection from "@/components/layout/ProfessionOverviewSection.vue";
 </script>
 
 <template>
-<section class="section profession">
-  <div class="profession__container container">
-    <h1 class="profession heading-1">Професія</h1>
-  </div>
-
-</section>
+<profession-overview-section/>
 </template>
 
 <style scoped lang="scss">
