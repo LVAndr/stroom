@@ -31,8 +31,8 @@ import BookmarkBtn from "@/components/BookmarkBtn.vue";
       </div>
       <div class="profession-overview__btns">
 <!--        <set-button rounded label="Додати в обране" animation=""/>-->
-        <set-button label="Підписатись на професію"/>
-          <bookmark-btn/>
+        <set-button class="subscribe-btn" label="Підписатись на професію"/>
+          <bookmark-btn class="bookmark-prof-btn"/>
       </div>
     </div>
     </div>
@@ -129,6 +129,13 @@ import BookmarkBtn from "@/components/BookmarkBtn.vue";
     &__img{
       max-width: 350px;
       max-height: 300px;
+    }
+    &__btns{
+      gap: 8px;
+      .subscribe-btn{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 }

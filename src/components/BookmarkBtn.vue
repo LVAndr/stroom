@@ -5,7 +5,7 @@ const bookmark = ref(true);
 
 const emits = defineEmits(['click-bookmark']);
 const clickOnButton = ()=>{
-    emits("btn-click");
+    emits('click-bookmark');
     bookmark.value = !bookmark.value;
 }
 </script>
