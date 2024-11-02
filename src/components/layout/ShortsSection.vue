@@ -89,6 +89,9 @@ import short from '@/assets/images/shorts-item-img.jpg'
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    &:active &-play-button>svg{
+      scale: 1.08;
+    }
     &-video{
       width: 100%;
       height: 100%;
@@ -106,6 +109,14 @@ import short from '@/assets/images/shorts-item-img.jpg'
       z-index: 10;
       background: none;
       cursor: pointer;
+    }
+  }
+}
+@media (max-width: 374.98px) {
+  .shorts{
+    &__item{
+      width: 280px;
+      height: 410px;
     }
   }
 }
