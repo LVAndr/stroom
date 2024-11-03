@@ -66,12 +66,13 @@ import SetButton from "@/components/setButton.vue";
     }
   }
   .background-video {
-    max-width: 1600px;
+    max-width: 1920px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100vh;
+    transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: -1;
   }
