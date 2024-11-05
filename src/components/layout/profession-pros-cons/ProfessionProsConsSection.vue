@@ -1,6 +1,6 @@
 <script setup>
 
-import ProsConsItem from "@/components/profession-pros-cons/ProsConsItem.vue";
+import ProsConsItem from "@/components/layout/profession-pros-cons/ProsConsItem.vue";
 import {ref} from "vue";
 
 const professionCharacteristics = ref([
@@ -55,7 +55,8 @@ const professionCharacteristics = ref([
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main";
+@import "@/styles/main.scss";
+
 .pros-cons{
   &__list{
     margin-top: 30px;

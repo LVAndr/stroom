@@ -4,8 +4,10 @@ import ProfessionOverviewSection from "@/components/layout/ProfessionOverviewSec
 import ShortsSection from "@/components/layout/ShortsSection.vue";
 import ProfessionStatisticsSection from "@/components/layout/ProfessionStatisticsSection.vue";
 import ProfessionSkillsSection from "@/components/layout/professionSkills/ProfessionSkillsSection.vue";
-import ProfessionProsConsSection from "@/components/profession-pros-cons/ProfessionProsConsSection.vue";
-import CareerEducationSection from "@/components/career-education/CareerEducationSection.vue";
+import ProfessionProsConsSection from "@/components/layout/profession-pros-cons/ProfessionProsConsSection.vue";
+import CareerEducationSection from "@/components/layout/career-education/CareerEducationSection.vue";
+import ProfessionTestSection from "@/components/layout/ProfessionTestSection.vue";
+import SimilarProfessionsSection from "@/components/layout/SimilarProfessionsSection.vue";
 </script>
 
 <template>
@@ -15,6 +17,8 @@ import CareerEducationSection from "@/components/career-education/CareerEducatio
   <profession-skills-section/>
   <profession-pros-cons-section/>
   <career-education-section/>
+  <profession-test-section/>
+  <similar-professions-section/>
 </template>
 
 <style scoped lang="scss">

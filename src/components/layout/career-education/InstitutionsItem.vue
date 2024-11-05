@@ -71,6 +71,9 @@ const props = defineProps({
     padding: 10px;
     border: 1px solid $dark-jungle-green-opacity50;
     border-radius: $border-radius-small;
+    &__img{
+      border-radius: $border-radius-smaller;
+    }
     &__info{
       flex-direction: column;
       align-items: start;
@@ -92,6 +95,7 @@ const props = defineProps({
 @media (max-width: 424.98px) {
   .institutions-item{
     flex-direction: column;
+    padding-top: 20px;
     padding-bottom: 20px;
 
     &__img {

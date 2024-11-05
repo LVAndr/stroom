@@ -22,6 +22,9 @@ body{
   line-height: 1.2;
   background-color: $white-smoke;
 }
+.no-scroll{
+  overflow: hidden;
+}
 #app{
   height: 100%;
 }
