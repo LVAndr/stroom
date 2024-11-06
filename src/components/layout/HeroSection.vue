@@ -6,8 +6,88 @@ import SetButton from "@/components/setButton.vue";
 <template>
   <section class="section hero">
     <video autoplay loop muted playsinline class="background-video">
-      <source src="../../assets/images/hero-background.mp4" type="video/mp4">
-      <source src="../../assets/images/hero-background.webm" type="video/webm">
+      <source
+          src="../../assets/images/hero-background/375.mp4"
+          type="video/mp4"
+          media="(max-width: 375px)"
+      >
+      <source
+          src="../../assets/images/hero-background/480.mp4"
+          type="video/mp4"
+          media="(max-width: 480px)"
+      >
+      <source
+          src="../../assets/images/hero-background/768.mp4"
+          type="video/mp4"
+          media="(max-width: 768px)"
+      >
+      <source
+          src="../../assets/images/hero-background/992.mp4"
+          type="video/mp4"
+          media="(max-width: 992px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1250.mp4"
+          type="video/mp4"
+          media="(max-width: 1250px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1440.mp4"
+          type="video/mp4"
+          media="(max-width: 1440px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1600.mp4"
+          type="video/mp4"
+          media="(max-width: 1600px)"
+      >
+      <source
+          src="../../assets/images/hero-background/hero-background-large.mp4"
+          type="video/mp4"
+          media="(min-width: 1601px)"
+      >
+
+      <!-- WEBM формат -->
+      <source
+          src="../../assets/images/hero-background/375.webm"
+          type="video/webm"
+          media="(max-width: 375px)"
+      >
+      <source
+          src="../../assets/images/hero-background/480.webm"
+          type="video/webm"
+          media="(max-width: 480px)"
+      >
+      <source
+          src="../../assets/images/hero-background/768.webm"
+          type="video/webm"
+          media="(max-width: 768px)"
+      >
+      <source
+          src="../../assets/images/hero-background/992.webm"
+          type="video/webm"
+          media="(max-width: 992px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1250.webm"
+          type="video/webm"
+          media="(max-width: 1250px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1440.webm"
+          type="video/webm"
+          media="(max-width: 1440px)"
+      >
+      <source
+          src="../../assets/images/hero-background/1600.webm"
+          type="video/webm"
+          media="(max-width: 1600px)"
+      >
+      <source
+          src="../../assets/images/hero-background/hero-background-large.webm"
+          type="video/webm"
+          media="(min-width: 1601px)"
+      >
     </video>
     <div class="container hero__container">
       <div class="hero__content">
