@@ -16,7 +16,7 @@ const props = defineProps({
   <div class="institutions-item__info">
     <div class="institutions-item__info-description">
       <h3 class="institutions-item__info-title heading-3">
-        Державне підприємство "Інститут підготовки кадрів промисловості"
+        Державне підприємство "Інститут підготовки кадрів промисловості" у плдільскому районі
       </h3>
       <address>
         м.Київ, вул. Лук`янівська, 65/67
@@ -55,6 +55,11 @@ const props = defineProps({
     }
     &-title{
       margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &-characteristics{
       display: flex;
@@ -88,6 +93,11 @@ const props = defineProps({
       & img{
         width: 100px;
         height: 100px;
+      }
+    }
+    &__info{
+      &-title{
+        -webkit-line-clamp: 3;
       }
     }
   }

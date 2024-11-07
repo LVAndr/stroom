@@ -79,9 +79,10 @@ const props = defineProps({
     position: absolute;
     top: 17px;
     right: 17px;
-    z-index: 12;
+    z-index: 50;
   }
   &__img{
+    z-index: 5;
     img{
       width: 100%;
       height: auto;
@@ -101,6 +102,11 @@ const props = defineProps({
     &-text{
       color: $dark-jungle-green-opacity;
       margin-top: auto;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
