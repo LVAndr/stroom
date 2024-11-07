@@ -1,6 +1,7 @@
 <script setup>
 
 import SetButton from "@/components/setButton.vue";
+import ProfessionCard from "@/components/layout/ProfessionCard.vue";
 </script>
 
 <template>
@@ -10,7 +11,9 @@ import SetButton from "@/components/setButton.vue";
       Схожі професії
     </h2>
     <ul class="similar-professions__list">
-      <li class="similar-professions__item">Список схожих професій</li>
+      <profession-card title="Кравець 3-го розряду 222 ава пап" class="similar-professions__item" text-color="under-dark"/>
+      <profession-card class="similar-professions__item" text-color="under-dark"/>
+      <profession-card class="similar-professions__item" text-color="under-dark"/>
     </ul>
     <div class="similar-professions__btn">
       <set-button tag="router-link" :url="{name: 'professions'}" label="Більше професій"/>
@@ -28,12 +31,23 @@ import SetButton from "@/components/setButton.vue";
   }
   &__list{
     margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: 30px;
   }
   &__btn{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .similar-professions{
+    &__list{
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));;
+    }
   }
 }
 </style>
