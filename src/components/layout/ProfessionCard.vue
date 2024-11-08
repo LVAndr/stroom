@@ -1,11 +1,12 @@
 <script setup>
 import professionImg from '@/assets/images/professions-img/designer.jpg'
 import BookmarkBtn from "@/components/BookmarkBtn.vue";
+import TagsList from "@/components/TagsList.vue";
 
 const props = defineProps({
   textColor: {
     type: String,
-    default: 'under-light'
+    default: 'over-light'
   },
   title: {
     type: String,
@@ -14,6 +15,10 @@ const props = defineProps({
   text: {
     type: String,
     default: 'Зварювальник здійснює зварювання металевих частин та конструкцій, використовуючи різні технології зварювання для створення, ремонту або реконструкції металевих виробів',
+  },
+  tagsColor: {
+    type: String,
+    default: 'dark',
   }
 })
 </script>
@@ -29,7 +34,7 @@ const props = defineProps({
       <h3 class="profession-card__description-title">
         {{title}}
       </h3>
-      <div class="profession-card__description-tags">#Мода</div>
+     <tags-list class="profession-card__description-tags" :color="tagsColor" add-hashtag rounded/>
       <div class="profession-card__description-text">
         Зварювальник здійснює зварювання металевих частин та конструкцій, використовуючи різні технології зварювання для створення, ремонту або реконструкції металевих виробів
       </div>
@@ -47,7 +52,7 @@ const props = defineProps({
   border: 1px solid;
   border-radius: $border-radius-small;
   overflow: hidden;
-  &__under-light{
+  &__over-light{
     color: $dark-jungle-green;
     border-color: #e0e0e0;
     transition: scale .3s ease, box-shadow .4s ease;
@@ -58,7 +63,7 @@ const props = defineProps({
       box-shadow: 0 1px 6px 2px $dark-jungle-green-opacity20;
     }
   }
-  &__under-dark{
+  &__over-dark{
     border-color: #373737;
     color: $white-smoke;
     transition: scale .3s ease, box-shadow .4s ease;

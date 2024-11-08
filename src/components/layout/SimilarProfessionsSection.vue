@@ -11,9 +11,9 @@ import ProfessionCard from "@/components/layout/ProfessionCard.vue";
       Схожі професії
     </h2>
     <ul class="similar-professions__list">
-      <profession-card title="Кравець 3-го розряду 222 ава пап" class="similar-professions__item" text-color="under-dark"/>
-      <profession-card class="similar-professions__item" text-color="under-dark"/>
-      <profession-card class="similar-professions__item" text-color="under-dark"/>
+      <profession-card title="Кравець 3-го розряду 222 ава пап" class="similar-professions__item" text-color="over-dark" tags-color="light"/>
+      <profession-card class="similar-professions__item" text-color="over-dark" tags-color="light"/>
+      <profession-card class="similar-professions__item" text-color="over-dark" tags-color="light"/>
     </ul>
     <div class="similar-professions__btn">
       <set-button tag="router-link" :url="{name: 'professions'}" label="Більше професій"/>

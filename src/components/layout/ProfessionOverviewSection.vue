@@ -2,6 +2,7 @@
 import professionImg from '@/assets/images/professions-img/designer.jpg'
 import SetButton from "@/components/setButton.vue";
 import BookmarkBtn from "@/components/BookmarkBtn.vue";
+import TagsList from "@/components/TagsList.vue";
 
 
 </script>
@@ -16,11 +17,7 @@ import BookmarkBtn from "@/components/BookmarkBtn.vue";
       <h1 class="profession-overview__title heading-2">
         Зварювальник
       </h1>
-      <div class="profession-overview__tags">
-        <span class="profession-overview__tag">#Мода&nbsp;&nbsp;</span>
-        <span class="profession-overview__tag">#Ручна праця&nbsp;&nbsp;</span>
-        <span class="profession-overview__tag">#Креативність&nbsp;&nbsp;</span>
-      </div>
+      <tags-list class="profession-overview__tags" add-hashtag/>
       <div class="profession-overview__description">
         <p class="profession-overview__description-text">
           Кравець виготовляє, ремонтує та змінює одяг, підганяючи його під мірки та смаки клієнтів.
@@ -65,10 +62,6 @@ import BookmarkBtn from "@/components/BookmarkBtn.vue";
   }
   &__tags{
     margin-top: 20px;
-    color: $apple-green;
-  }
-  &__tag{
-    font-weight: 500;
   }
   &__description{
     margin-top: 20px;
