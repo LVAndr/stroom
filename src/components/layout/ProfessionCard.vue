@@ -85,6 +85,7 @@ const props = defineProps({
     top: 17px;
     right: 17px;
     z-index: 50;
+    -webkit-transform: translateZ(0);
   }
   &__img{
     z-index: 5;
