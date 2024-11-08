@@ -36,7 +36,11 @@ const props = defineProps({
     padding: 16px;
   }
 }
-
+@media (max-width: 479.98px) {
+  .skill {
+    border: 1px solid $apple-green;
+  }
+}
 @media (max-width: 374.98px) {
   .skill {
     padding: 12px;

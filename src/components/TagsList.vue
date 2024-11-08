@@ -55,4 +55,13 @@ const props = defineProps({
     }
   }
 }
+@media (max-width: 479.98px){
+  .tags{
+    &__item{
+      &-rounded{
+        border: 1px solid $apple-green;
+      }
+    }
+  }
+}
 </style>
