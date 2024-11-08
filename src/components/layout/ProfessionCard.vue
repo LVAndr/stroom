@@ -26,9 +26,9 @@ const props = defineProps({
 <template>
 <li :class="['profession-card', `profession-card__${textColor}`]">
   <router-link class="profession-card__link" :to="{name: 'profession', params: {id: '1'}}">
-    <bookmark-btn class="profession-card__bookmark"/>
     <div class="profession-card__img">
       <img :src="professionImg" alt="картинка професії">
+      <bookmark-btn class="profession-card__bookmark"/>
     </div>
     <div class="profession-card__description">
       <h3 class="profession-card__description-title">
@@ -78,7 +78,14 @@ const props = defineProps({
     }
   }
   &__link{
+  }
+  &__img{
     position: relative;
+    z-index: 1;
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
   &__bookmark{
     position: absolute;
@@ -86,13 +93,6 @@ const props = defineProps({
     right: 17px;
     z-index: 50;
     -webkit-transform: translateZ(0);
-  }
-  &__img{
-    z-index: 5;
-    img{
-      width: 100%;
-      height: auto;
-    }
   }
   &__description{
     padding: 10px 20px 20px;
