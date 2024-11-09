@@ -112,7 +112,7 @@ import SetButton from "@/components/setButton.vue";
   height: 100vh;
   overflow: hidden;
   &:before{
-    max-width: 1600px;
+    max-width: 1920px;
     content: '';
     position: absolute;
     top: 0;
@@ -166,6 +166,40 @@ import SetButton from "@/components/setButton.vue";
     &-description{
       margin-bottom: 20px;
       font-size: $font-size-big;
+    }
+  }
+}
+@media (max-height: 640px) and (min-width: 991.98px) {
+  .hero{
+    height: 650px;
+    &:before{
+      height: 650px;
+    }
+    &__container{
+      padding-top: 180px;
+    }
+    &__content{
+      padding-top: 180px;
+    }
+    .background-video{
+      height: 650px;
+    }
+  }
+}
+@media (max-height: 540px) {
+  .hero{
+    height: 540px;
+    &:before{
+      height: 540px;
+    }
+    &__container{
+      padding-top: 180px;
+    }
+    &__content{
+      padding-top: 180px;
+    }
+    .background-video{
+      height: 540px;
     }
   }
 }
