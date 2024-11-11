@@ -163,17 +163,17 @@ const props = defineProps({
     }
 
     &.profession-card__over-light:hover {
-      transform: scale(1.02);
-      -webkit-box-shadow: 0 1px 6px 2px $dark-jungle-green-opacity20;
-      -moz-box-shadow: 0 1px 6px 2px $dark-jungle-green-opacity20;
-      box-shadow: 0 1px 6px 2px $dark-jungle-green-opacity20;
+      transform: scale(1.01);
+      -webkit-box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
+      -moz-box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
+      box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
     &.profession-card__over-dark:hover {
-      transform: scale(1.02);
-      -webkit-box-shadow: 0 1px 6px 2px $white-smoke-opacity3;
-      -moz-box-shadow: 0 1px 6px 2px $white-smoke-opacity3;
-      box-shadow: 0 1px 6px 2px $white-smoke-opacity3;
+      transform: scale(1.01);
+      -webkit-box-shadow: 0 1px 3px 1px $white-smoke-opacity3;
+      -moz-box-shadow: 0 1px 3px 1px $white-smoke-opacity3;
+      box-shadow: 0 1px 3px 1px $white-smoke-opacity3;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
   }
