@@ -28,8 +28,8 @@ const props = defineProps({
     <div class="pros-cons-item__icon">
       <template v-if="aspectValue === 'pros'">
         <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.4688 3.31152V29.249" stroke="#79C912" stroke-width="3"/>
-          <path d="M2.5 16.2803L28.4375 16.2803" stroke="#79C912" stroke-width="3"/>
+          <path d="M15.4688 3.31152V29.249" stroke="#d6ef4d" stroke-width="3"/>
+          <path d="M2.5 16.2803L28.4375 16.2803" stroke="#d6ef4d" stroke-width="3"/>
         </svg>
       </template>
       <template v-else>

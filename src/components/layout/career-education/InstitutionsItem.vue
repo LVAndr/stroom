@@ -77,9 +77,11 @@ const props = defineProps({
 }
 @media (max-width: 991.98px) {
   .institutions-item{
-    padding: 10px;
     border: 1px solid $dark-jungle-green-opacity50;
     border-radius: $border-radius-small;
+    &__link{
+      padding: 10px;
+    }
     &__img{
       border-radius: $border-radius-smaller;
     }
@@ -121,6 +123,17 @@ const props = defineProps({
         height: 200px;
       }
     }
+  }
+}
+@media (hover: hover){
+  .institutions-item:hover{
+    transform: scale(1.01);
+    transition: transform 0.4s ease;
+  }
+}
+@media (hover: none){
+  .institutions-item:active{
+    transform: scale(1.01);
   }
 }
 </style>

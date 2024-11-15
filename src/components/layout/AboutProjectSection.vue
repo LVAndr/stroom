@@ -69,5 +69,12 @@
     }
   }
 }
+@media (max-width: 1440px) {
+  .about-project{
+    &__decoration{
+      display: none;
+    }
+  }
+}
 
 </style>
