@@ -2,7 +2,7 @@
 const props = defineProps({
   tagsList: {
     type: Array,
-    default: ['Мода', 'Креативність', 'Ручна праця']
+    default: ''
   },
   addHashtag: {
     type: Boolean,

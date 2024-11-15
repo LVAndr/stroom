@@ -63,7 +63,7 @@ const clickOnButton = ()=>{
   min-width: 100px;
   text-align: center;
   font-size: clamp(1.125rem, 0.435vw + 1.038rem, 1.375rem);
-  font-family: 'Ermilov Pro', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Helvetican Eue', 'Arial', 'Helvetica', sans-serif;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;

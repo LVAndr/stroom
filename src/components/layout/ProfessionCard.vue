@@ -42,8 +42,8 @@ const props = defineProps({
     <div class="profession-card__icon">
       <span>Детальніше</span>
       <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4.08887 3.64087L35.4991 35.0511" stroke="#77D202" stroke-width="7.17949"/>
-        <path d="M0.5 35.5H34.6026V0.5" stroke="#77D202" stroke-width="7.17949"/>
+        <path d="M4.08887 3.64087L35.4991 35.0511" stroke="#E2FC52" stroke-width="7.17949"/>
+        <path d="M0.5 35.5H34.6026V0.5" stroke="#E2FC52" stroke-width="7.17949"/>
       </svg>
     </div>
   </router-link>
@@ -164,9 +164,9 @@ const props = defineProps({
 
     &.profession-card__over-light:hover {
       transform: scale(1.01);
-      -webkit-box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
-      -moz-box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
-      box-shadow: 0 1px 3px 1px $dark-jungle-green-opacity20;
+      -webkit-box-shadow: 0 1px 5px 2px $dark-jungle-green-opacity10;
+      -moz-box-shadow: 0 1px 5px 2px $dark-jungle-green-opacity10;
+      box-shadow: 0 1px 5px 2px $dark-jungle-green-opacity10;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
     &.profession-card__over-dark:hover {

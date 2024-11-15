@@ -35,6 +35,7 @@
       flex-direction: column;
       align-items: center;
       .copyright{
+        margin-top: 10px;
         text-align: center;
         font-size: clamp(0.75rem, 0.435vw + 0.663rem, 1rem);
       }

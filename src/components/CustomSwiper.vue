@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
+import {computed} from "vue";
+
 const props = defineProps({
   slides: {
     type: Array,
@@ -28,10 +30,26 @@ const props = defineProps({
     default: false
   }
 })
+const swiperModules = computed(() => {
+  const modules = [];
+  if (props.autoplay) modules.push(Autoplay);
+  if (props.pagination) modules.push(Pagination);
+  if (props.navigation) modules.push(Navigation);
+  return modules;
+});
 </script>
 
 <template>
-<swiper>
+<swiper
+    :modules="swiperModules"
+    :autoplay="autoplay ? { delay: autoplayDelay, disableOnInteraction: false } : false"
+    :speed="500"
+    :loop="true"
+    :pagination="pagination ? { clickable: true } : false"
+    :navigation="navigation"
+    :slides-per-view="4"
+    :space-between="20"
+    class="swiper-container">
   <swiper-slide>
 
   </swiper-slide>

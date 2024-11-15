@@ -25,6 +25,11 @@ const router = createRouter({
             component: () => import('@/views/Profession.vue')
         },
         {
+            name: "institution",
+            path: '/stroom/institution/:id',
+            component: () => import('@/views/Institution.vue')
+        },
+        {
             name: "user",
             path: '/stroom/user',
             component: () => import('@/views/User.vue')

@@ -10,36 +10,40 @@ const props = defineProps({
 
 <template>
 <li class="institutions-item">
-  <div class="institutions-item__img">
-    <img :src="img" width="140" height="140" alt="Зображення навчального закладу">
-  </div>
-  <div class="institutions-item__info">
-    <div class="institutions-item__info-description">
-      <h3 class="institutions-item__info-title heading-3">
-        Державне підприємство "Інститут підготовки кадрів промисловості" у плдільскому районі
-      </h3>
-      <address>
-        м.Київ, вул. Лук`янівська, 65/67
-      </address>
+  <router-link class="institutions-item__link" :to="{name: 'institution', params: {id: '1'}}">
+    <div class="institutions-item__img">
+      <img :src="img" width="140" height="140" alt="Зображення навчального закладу">
     </div>
-    <div class="institutions-item__info-characteristics">
-      <div class="institutions-item__info-education-type">
-        Державне
+    <div class="institutions-item__info">
+      <div class="institutions-item__info-description">
+        <h3 class="institutions-item__info-title heading-3">
+          Державне підприємство "Інститут підготовки кадрів промисловості" у подільскому районі
+        </h3>
+        <address>
+          м.Київ, вул. Лук`янівська, 65/67
+        </address>
       </div>
-      <div class="institutions-item__info-education-duration">
-        2 роки навчання
+      <div class="institutions-item__info-characteristics">
+        <div class="institutions-item__info-education-type">
+          Державне
+        </div>
+        <div class="institutions-item__info-education-duration">
+          2 роки навчання
+        </div>
       </div>
     </div>
-  </div>
+  </router-link>
 </li>
 </template>
 
 <style scoped lang="scss">
 @import "@/styles/main.scss";
 .institutions-item{
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  &__link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
   &__img{
     max-width: 140px;
     width: 100%;
@@ -104,10 +108,11 @@ const props = defineProps({
 }
 @media (max-width: 424.98px) {
   .institutions-item{
-    flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    &__link{
+      flex-direction: column;
+    }
     &__img {
       max-width: 200px;
       height: 200px;

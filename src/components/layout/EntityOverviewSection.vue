@@ -4,7 +4,20 @@ import SetButton from "@/components/setButton.vue";
 import BookmarkBtn from "@/components/BookmarkBtn.vue";
 import TagsList from "@/components/TagsList.vue";
 
-
+const props = defineProps({
+  title: {
+    type: String,
+    default: ''
+  },
+  description: {
+    type: String,
+    default: ''
+  },
+  tags: {
+    type: Array,
+    default: null
+  }
+})
 </script>
 <template>
 <section class="section profession-overview">
@@ -14,16 +27,20 @@ import TagsList from "@/components/TagsList.vue";
       <img :src="professionImg" width="400" height="400" alt="Фото професії" loading="lazy">
     </div>
     <div class="profession-overview__content">
-      <h1 class="profession-overview__title heading-2">
-        Зварювальник
+      <h1
+          v-if="title"
+          class="profession-overview__title heading-2"
+      >
+        {{title}}
       </h1>
-      <tags-list class="profession-overview__tags" add-hashtag/>
+      <tags-list
+          v-if="tags"
+          class="profession-overview__tags"
+          add-hashtag :tags-list="tags"
+      />
       <div class="profession-overview__description">
-        <p class="profession-overview__description-text">
-          Кравець виготовляє, ремонтує та змінює одяг, підганяючи його під мірки та смаки клієнтів.
-        </p>
-        <p class="profession-overview__description-text">
-          Працює з різними тканинами, викрійками та інструментами для шиття, щоб створити одяг, який ідеально підходить.
+        <p v-if="description" class="profession-overview__description-text">
+          {{description}}
         </p>
       </div>
       <div class="profession-overview__btns">
@@ -46,6 +63,7 @@ import TagsList from "@/components/TagsList.vue";
     gap: 30px;
   }
   &__content{
+    width: 100%;
     position: relative;
   }
   &__title{

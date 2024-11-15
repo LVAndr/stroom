@@ -18,8 +18,8 @@ const ifHomePageH = computed(() => {
       <router-link class="header__navigation-link" :to="{name: 'user'}">
         <div class="user-icon">
           <svg width="43" height="39" viewBox="0 0 43 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21.6464" cy="12.5778" r="9.90856" stroke="#77D202" stroke-width="5.33894"/>
-            <path d="M2.66797 38.804C2.74508 34.2547 6.60046 25.156 21.4051 25.156C36.2098 25.156 40.0651 34.2547 40.1423 38.804" stroke="#77D202" stroke-width="5.33844"/>
+            <circle cx="21.6464" cy="12.5778" r="9.90856" stroke="#E2FC52" stroke-width="5.33894"/>
+            <path d="M2.66797 38.804C2.74508 34.2547 6.60046 25.156 21.4051 25.156C36.2098 25.156 40.0651 34.2547 40.1423 38.804" stroke="#E2FC52" stroke-width="5.33844"/>
           </svg>
         </div>
       </router-link>
@@ -51,7 +51,6 @@ const ifHomePageH = computed(() => {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    height: $header-height;
   }
   &__navigation{
     display: flex;
